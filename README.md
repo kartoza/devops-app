@@ -2,7 +2,7 @@
 ![Staging Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/minisass_build-status.json)
 
 Kartoza DevOps Testing web-app
-==========================
+==============================
 
 The Kartoza DevOps web-app is designed to serve as a simple testing web app for managing and evaluating changes within the Software Development Life Cycle (SDLC). Its primary purpose is to provide developers and DevOps teams with a simple, robust  scalable to deploy, test, and monitor web applications in a controlled setting.
 
@@ -12,16 +12,41 @@ in on the map to display it's location.
 
 ## Usage
 ### 1. Clone the Repository:
-```
-git clone https://github.com/LokoMoloko98/Kartoza_Tech_Assessment.git
+```bash
+git clone https://github.com/kartoza/devops-app
 ```
 
 ### 2. Navigate to the Project Directory:
+```bash
+cd devops-app
 ```
-cd /Kartoza_Tech_Assessment
+### 3. Build the app container image:
+Make the build bash script executable:
+```bash
+chmod +x build_image.sh
 ```
-### To be continued
-...............
+
+Run the script:
+```bash
+./build_image.sh
+```
+
+### 4. Run the container from the image:
+```bash
+docker run -d --name kartoza_devops_app_container -p 8501:8501 kartoza_devops_app
+```
+
+### 5. Check that the container is running and the app is running locallly
+```bash
+docker ps 
+```
+You should find a container named `kartoza_devops_app_container` in the running containers list. It's healthcheck should be `healthy`. 
+
+### 6. Access the app locally
+ Go to a browser and access the app via this url:
+ ```
+ http://localhost:8501/
+ ```
 
 ## Health Checks
-- Dockerfile: A health check for the web-app container has been set up in in the Dockerfile to automatically check the health of the container. The health check makes a curl request internally so see if the Streamlit app is still accessible via ists local access url.
+- A health check for the web-app container has been set up in in the Dockerfile to automatically check the health of the container. The health check makes a curl request internally so see if the Streamlit app is still accessible via ists local access url.
