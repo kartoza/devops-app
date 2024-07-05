@@ -48,5 +48,8 @@ You should find a container named `kartoza_devops_app_container` in the running 
  http://localhost:8501/
  ```
 
+You should be able to see the web-app interface as such:
+![web-app interface](image.png)
+
 ## Health Checks
 - A health check for the web-app container has been set up in in the Dockerfile to automatically check the health of the container. The health check makes a curl request internally so see if the Streamlit app is still accessible via ists local access url.
