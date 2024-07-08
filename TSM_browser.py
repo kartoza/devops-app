@@ -51,8 +51,6 @@ option = st.sidebar.selectbox('Select a Town Survey Mark', data['PNT'])
 
 # Finding the coordinates
 selected_mark = data[data['PNT'] == option]
-# lat = selected_mark['coordinates'].apply(lambda x: x[1]).values[0]  # Latitude 
-# lon = selected_mark['coordinates'].apply(lambda x: x[0]).values[0]  # Longitude 
 
 lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
 lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
@@ -61,7 +59,7 @@ lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
 m = folium.Map(location=[lat, lon], zoom_start=12)
 
 # Add marker
-folium.Marker([lat, lon], tooltip='Click for more', popup=option).add_to(m)
+folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=option).add_to(m)
 
 # Display the map
 folium_static(m)
