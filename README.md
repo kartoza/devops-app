@@ -32,7 +32,7 @@ Run the script:
 
 ### 4. Run the container from the image:
 ```bash
-docker run -d --name kartoza_devops_app_container -p 8501:8501 kartoza_devops_app
+docker run -d --name kartoza_devops_app_container -p 8501:8501 kartoza-devops-app
 ```
 
 ### 5. Check that the container is running and the app is running locallly
