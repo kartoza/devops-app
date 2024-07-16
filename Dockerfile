@@ -1,5 +1,15 @@
-#Use an official Python runtime as a parent image
-FROM python:3.12
+#Use an Ubuntu runtime as a parent image
+FROM ubuntu:oracular
+
+# Update packages 
+RUN apt-get update
+
+# Install Python3
+RUN apt-get install python3 -y
+
+# Install pip 
+
+RUN apt-get install python3-pip -y
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,7 +18,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN python3 -m pip install -r requirements.txt --break-system-packages
 
 # Convert the CT TSM geojson file into a table in an SQLite database file
 RUN geojson-to-sqlite CT-TSMs.db town_survey_marks Town_Survey_Marks_1000.geojson 
