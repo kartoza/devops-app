@@ -37,7 +37,7 @@ data['coordinates'] = data['geometry']
 
 # Title of the dashboard
 st.title('Kartoza Devops App')
-st.header('City of Kape Town TSM Browser Web App - Notification Test', divider="blue")
+st.header('City of Kape Town TSM Browser Web App', divider="blue")
 st.markdown("""
 ### Simple TSM Browser Web App Overview
 This TSM Browser Web App provides an interactive platform for users to explore Town Survey Marks (TSM) within the City of Cape Town.
