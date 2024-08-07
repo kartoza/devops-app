@@ -26,14 +26,18 @@ h1 {
 
 # Connect to SQLite database
 conn = sqlite3.connect('CT-TSMs.db')
-query = """
+query1 = """
 SELECT PNT, geometry FROM town_survey_marks
 """
-data = pd.read_sql(query, conn)
+tsm_data = pd.read_sql(query1, conn)
+query2 = """
+SELECT OFC_SBRB_NAME, geometry FROM suburbs
+"""
+suburb_data = pd.read_sql(query2, conn)
 conn.close()
 
 # Parse the geometry data to extract coordinates
-data['coordinates'] = data['geometry']
+tsm_data['coordinates'] = tsm_data['geometry']
 
 # Title of the dashboard
 st.title('Kartoza Devops App')
@@ -47,10 +51,10 @@ in on the map to display the location
 
 
 # Dropdown to select the location
-option = st.sidebar.selectbox('Select a Town Survey Mark', data['PNT'])
+option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
 
 # Finding the coordinates
-selected_mark = data[data['PNT'] == option]
+selected_mark = tsm_data[tsm_data['PNT'] == option]
 
 lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
 lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
