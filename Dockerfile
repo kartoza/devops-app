@@ -23,7 +23,7 @@ RUN python3 -m pip install -r requirements.txt --break-system-packages
 # Convert the CT TSM geojson file into a table in an SQLite database file
 RUN geojson-to-sqlite CT-TSMs.db town_survey_marks Town_Survey_Marks_1000.geojson 
 
-RUN geojson-to-sqlite CT-TSMs.db town_survey_marks Official_Planning_Suburbs.geojson
+RUN geojson-to-sqlite CT-TSMs.db suburbs Official_Planning_Suburbs.geojson
 
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
