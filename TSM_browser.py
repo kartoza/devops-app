@@ -52,8 +52,8 @@ in on the map to display the location
 
 
 # Dropdown to select the location
-#tsm_option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
 suburb_option = st.sidebar.selectbox('Select a Suburb', suburb_data['OFC_SBRB_NAME'])
+tsm_option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
 
 # Finding the coordinates
 #selected_mark = tsm_data[tsm_data['PNT'] == tsm_option]
