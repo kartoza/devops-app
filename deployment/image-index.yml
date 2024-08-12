@@ -1,4 +1,4 @@
 images:
   - name: kartoza-devops-app
-    dockerfile: ./Dockerfile
+    dockerfile: 
     buildPath: .
