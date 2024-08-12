@@ -60,10 +60,13 @@ suburb_option = st.sidebar.selectbox('Select a Suburb', suburb_data['OFC_SBRB_NA
 selected_suburb = suburb_data[suburb_data['OFC_SBRB_NAME'] == suburb_option]
 # lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
 # lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
-suburb_polygon = json.loads(selected_suburb["coordinates"].values[0])["coordinates"][0][0]
+suburb_polygon_oiginal = json.loads(selected_suburb["coordinates"].values[0])["coordinates"][0][0]
+suburb_polygon = []
+for coord in suburb_polygon_oiginal:
+    suburb_polygon.append(list(reversed(coord)))
 
 # Create a map
-m = folium.Map(location=[18.715990471831351, -34.01443823945695], zoom_start=12)
+m = folium.Map(location=suburb_polygon[0], zoom_start=13)
 
 # Add marker
 #folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=tsm_option).add_to(m)
