@@ -70,7 +70,7 @@ m = folium.Map(location=suburb_polygon[0], zoom_start=13)
 
 # Add marker
 #folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=tsm_option).add_to(m)
-folium.Polygon(locations=suburb_polygon,tooltip='Hi there I am a suburb').add_to(m)
+folium.Polygon(locations=suburb_polygon,tooltip='Hi there I am a suburb', popup=suburb_option, fill_color="blue", fill_opacity=0.3).add_to(m)
 
 # Display the map
 folium_static(m)
