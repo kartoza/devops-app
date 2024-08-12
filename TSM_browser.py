@@ -47,25 +47,30 @@ st.markdown("""
 ### Simple TSM Browser Web App Overview
 This TSM Browser Web App provides an interactive platform for users to explore Town Survey Marks (TSM) within the City of Cape Town.
 Users can select a TSM from a dropdown menu or if they know the TSM ID, they can search for it, and the app will automatically zoom
-in on the map to display the location
+in on the map to display the location.
 """)
 
 
 # Dropdown to select the location
-option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
-option = st.sidebar.selectbox('Select a Suburb', suburb_data['OFC_SBRB_NAME'])
+suburb_option = st.sidebar.selectbox('Select a Suburb', suburb_data['OFC_SBRB_NAME'])
+tsm_option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
 
 # Finding the coordinates
-selected_mark = tsm_data[tsm_data['PNT'] == option]
-lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
-lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
+selected_mark = tsm_data[tsm_data['PNT'] == tsm_option]
+selected_suburb = suburb_data[suburb_data['OFC_SBRB_NAME'] == suburb_option]
+# lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
+# lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
+suburb_polygon_oiginal = json.loads(selected_suburb["coordinates"].values[0])["coordinates"][0][0]
+suburb_polygon = []
+for coord in suburb_polygon_oiginal:
+    suburb_polygon.append(list(reversed(coord)))
 
 # Create a map
-m = folium.Map(location=[lat, lon], zoom_start=12)
+m = folium.Map(location=suburb_polygon[0], zoom_start=13)
 
 # Add marker
-folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=option).add_to(m)
-#folium.Polygon([],tooltip='Hi there I am a suburb').add_to(m)
+#folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=tsm_option).add_to(m)
+folium.Polygon(locations=suburb_polygon,tooltip='Hi there I am a suburb', popup=suburb_option, fill_color="blue", fill_opacity=0.3).add_to(m)
 
 # Display the map
 folium_static(m)
