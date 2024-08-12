@@ -47,7 +47,7 @@ st.markdown("""
 ### Simple TSM Browser Web App Overview
 This TSM Browser Web App provides an interactive platform for users to explore Town Survey Marks (TSM) within the City of Cape Town.
 Users can select a TSM from a dropdown menu or if they know the TSM ID, they can search for it, and the app will automatically zoom
-in on the map to display the location
+in on the map to display the location.
 """)
 
 
