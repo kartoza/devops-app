@@ -66,7 +66,7 @@ for coord in suburb_polygon_oiginal:
     suburb_polygon.append(list(reversed(coord)))
 
 # Create a map
-m = folium.Map(location=suburb_polygon[0], zoom_start=14)
+m = folium.Map(location=suburb_polygon[0], zoom_start=13)
 
 # Add marker
 #folium.Marker([lat, lon], tooltip='Hi there I am a TSM', popup=tsm_option).add_to(m)
