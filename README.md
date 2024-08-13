@@ -4,7 +4,7 @@
 Kartoza DevOps Testing web-app
 ==============================
 
-A simple web app for testing against changes within the Software Development Life Cycle 
+A simple web app for testing against changes within the Software Development Life Cycle. 
 
 ## About the Web-App
 The Web-App is a Streamlit Dashboard that is connected to an SQLite Database that holds a subset of the records of the Town Survey Marks situated in the Cape Town region. (The Data is courtsy of the [City of Cape Town's Open Data Portal](https://odp-cctegis.opendata.arcgis.com/datasets/4ee4fef293d74436afe31c2b979dfb30_14/about).) The web app makes it possible for user to select a TSM from a dropdown menu or if they know the TSM ID, they can search for it, and the app will automatically zoom in on the map to display it's location. 
