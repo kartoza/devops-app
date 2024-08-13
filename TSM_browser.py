@@ -58,8 +58,8 @@ tsm_option = st.sidebar.selectbox('Select a Town Survey Mark', tsm_data['PNT'])
 # Finding the coordinates
 selected_mark = tsm_data[tsm_data['PNT'] == tsm_option]
 selected_suburb = suburb_data[suburb_data['OFC_SBRB_NAME'] == suburb_option]
-# lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
-# lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
+lat = json.loads(selected_mark["coordinates"].values[0])["coordinates"][1]
+lon = json.loads(selected_mark["coordinates"].values[0])["coordinates"][0]
 suburb_polygon_oiginal = json.loads(selected_suburb["coordinates"].values[0])["coordinates"][0][0]
 suburb_polygon = []
 for coord in suburb_polygon_oiginal:
