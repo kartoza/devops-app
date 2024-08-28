@@ -6,7 +6,7 @@ import pandas as pd
 import json
 
 st.set_page_config(
-    page_title="Kartoza DevOps App Cape Town TSM Browser - Harbor",
+    page_title="Kartoza DevOps App Cape Town TSM Browser",
     page_icon="🗺️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -42,7 +42,7 @@ suburb_data['coordinates'] = suburb_data['geometry']
 
 # Title of the dashboard
 st.title('Kartoza Devops App')
-st.header('City of Kape Town TSM Browser Web App', divider="blue")
+st.header('City of Kape Town TSM Browser Web App - Harbor', divider="blue")
 st.markdown("""
 ### Simple TSM Browser Web App Overview
 This TSM Browser Web App provides an interactive platform for users to explore Town Survey Marks (TSM) within the City of Cape Town.
