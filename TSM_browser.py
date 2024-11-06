@@ -6,7 +6,7 @@ import pandas as pd
 import json
 
 st.set_page_config(
-    page_title="Kartoza DevOps App Cape Town TSM Browser.",
+    page_title="Kartoza DevOps App Cape Town TSM Browser. Test SMEE",
     page_icon="🗺️",
     layout="wide",
     initial_sidebar_state="expanded"
