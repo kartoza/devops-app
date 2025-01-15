@@ -2,7 +2,7 @@
 ![Staging Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build-status.json)
 
 Kartoza DevOps Testing web app
-==============================
+===============================
 
 A simple web app for testing against changes within the Software Development Life Cycle. 
 
