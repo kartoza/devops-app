@@ -1,8 +1,8 @@
 ![Staging Tag](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_sta-tag.json)
 ![Staging Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build-status.json)
 
-![Last DEV Commit](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-dev-commit-tag.json)
-![DEV Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_dev-status.json)
+![Last DEV Commit](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_dev-dev-commit-tag.json)
+![DEV Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_dev-dev-status.json)
 
 Kartoza DevOps Testing web app
 ===============================
