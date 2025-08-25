@@ -6,7 +6,7 @@ import pandas as pd
 import json
 
 st.set_page_config(
-    page_title="Kartoza DevOps App.",
+    page_title="Kartoza DevOps App Argocd sync.",
     page_icon="🗺️",
     layout="wide",
     initial_sidebar_state="expanded"
