@@ -1,5 +1,5 @@
 #Use an Ubuntu runtime as a parent image
-FROM ubuntu:oracular
+FROM ubuntu:24.04
 
 # Update packages 
 RUN apt-get update
