@@ -4,8 +4,8 @@
 ![Last DEV Commit](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_dev-dev-commit-tag.json)
 ![DEV Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/lgkgh/889dd6c34a68d9461b1fd8cdb56b8a21/raw/kartoza-devops-app_build_dev-dev-status.json)
 
-Kartoza DevOps Testing web app
-===============================
+Kartoza DevOps Testing web app badge test
+=========================================
 
 A simple web app for testing against changes within the Software Development Life Cycle (SDLC).
 
