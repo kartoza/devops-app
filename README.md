@@ -54,4 +54,4 @@ You should be able to see the web-app interface as such:
 ![web-app interface](image.png)
 
 ## Health Checks
-- Health check for the web-app container has been set up in the Dockerfile to automatically check the health of the container. The health check makes a curl request internally so see if the Streamlit app is still accessible via its local access url.
+- A Health check for the web-app container has been set up in the Dockerfile to automatically check the health of the container. The health check makes a curl request internally so see if the Streamlit app is still accessible via its local access url.
