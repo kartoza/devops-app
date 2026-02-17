@@ -45,7 +45,7 @@ docker ps
 You should find a container named `kartoza_devops_app_container` in the running containers list. It's healthcheck should be `healthy`. 
 
 ### 6. Access the app locally
- Go to the browser and access the app via this url:
+ Go to the browser and access the app using the url:
  ```
  http://localhost:8501/
  ```
