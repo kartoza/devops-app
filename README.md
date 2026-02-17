@@ -50,7 +50,7 @@ You should find a container named `kartoza_devops_app_container` in the running 
  http://localhost:8501/
  ```
 
-You should be able to see the web-app interface like:
+You should be able to see the web-app interface like this:
 ![web-app interface](image.png)
 
 ## Health Checks
