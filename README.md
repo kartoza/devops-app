@@ -33,7 +33,7 @@ Run the script:
 ./build_image.sh
 ```
 
-### 4. Run the container from the image:
+### 4. Run the container using the image:
 ```bash
 docker run -d --name kartoza_devops_app_container -p 8501:8501 kartoza-devops-app
 ```
