@@ -1,8 +1,8 @@
-![Staging Tag](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app_build_sta-tag.json)
-![Staging Status](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app_build-status.json)
+![Staging Tag](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app/kartoza-devops-app_build_sta-tag.json)
+![Staging Status](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app/kartoza-devops-app_build-status.json)
 
-![Last DEV Commit](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app_build_dev/dev-commit-tag.json)
-![DEV Status](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app_build_dev/dev-status.json)
+![Last DEV Commit](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app/kartoza-devops-app_build_dev/dev-commit-tag.json)
+![DEV Status](https://img.shields.io/endpoint?url=https://kartoza.github.io/kartoza-badges/data/kartoza-devops-app/kartoza-devops-app_build_dev/dev-status.json)
 
 Kartoza DevOps Testing web app badge test
 =========================================
