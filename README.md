@@ -22,7 +22,7 @@ git clone https://github.com/kartoza/devops-app
 ```bash
 cd devops-app
 ```
-### 3. Build the app container image:
+### 3. Build the app container image by the script:
 Make the build bash script executable:
 ```bash
 chmod +x build_image.sh
