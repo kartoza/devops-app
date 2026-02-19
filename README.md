@@ -38,7 +38,7 @@ Run the script:
 docker run -d --name kartoza_devops_app_container -p 8501:8501 kartoza-devops-app
 ```
 
-### 5. Check that the container is running and the app is running locallly.
+### 5. Check that the container is up and the app is running.
 ```bash
 docker ps 
 ```
