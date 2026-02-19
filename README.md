@@ -18,7 +18,7 @@ The Web-App is a Streamlit Dashboard that is connected to an SQLite Database tha
 git clone https://github.com/kartoza/devops-app
 ```
 
-### 2. Navigate to the Project Directory:
+### 2. Navigate to the Project Directory as shown:
 ```bash
 cd devops-app
 ```
